@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <title>Minha primeira PWA</title>
+        <link rel="apple-touch-icon" href="images/pwa-icon-256.png" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="manifest" href="/manifest.json" />
+        <!--viewport para designers responsivos (mobo), content é a configuração-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="white" />
+    </head>
+    <body class="fullscreen">
+
+        <div class="container">
+
+            <h1 class="title">Área do retângulo</h1>
+
+            <label for="altura">Altura</label><input type="text" id="altura" name="altura">
+
+            <label for="largura">Largura</label><input type="text" id="largura" name="largura">
+
+            <button id="botao" type="button" onclick="calcular()">Calcular</button>
+
+            <div><h1>A área total é: <span id="resultado">0</span></h1></div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
